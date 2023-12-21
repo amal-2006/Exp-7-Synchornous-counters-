@@ -115,8 +115,10 @@ end
 
 # Truth Table
 ### UP COUNTER
+![Exp 6 UC Truth Table](https://github.com/amal-2006/Exp-7-Synchornous-counters-/assets/148410730/b94207e2-8bd7-46eb-adbd-9099c856823c)
 
 ### DOWN COUNTER
+![Exp 6 DC Truth Table](https://github.com/amal-2006/Exp-7-Synchornous-counters-/assets/148410730/5de2a377-f527-4dd1-9bf5-4a3c1cd286bc)
 
 
 
