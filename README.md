@@ -1,9 +1,12 @@
-# Exp-6-Synchornous-counters - up counter and down counter 
-### AIM: To implement 4 bit up and down counters and validate  functionality.
-### HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
-### SOFTWARE REQUIRED:   Quartus prime
-### THEORY 
-
+### Name: AMALJOSH MAADHAV J
+### Roll No: 23014023
+# Experiment 06: Synchronous counters- Up counter and Down counter
+# AIM
+To implement 4 bit up and down counters and validate functionality.
+# Equipments Required:
+Hardware: PC, Cyclone II , USB flasher
+Software: Quartus prime
+# Theory
 ## UP COUNTER 
 The counter is a digital sequential circuit and here it is a 4 bit counter, which simply means it can count from 0 to 15 and vice versa based upon the direction of counting (up/down). 
 
@@ -45,44 +48,88 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 
 4-bit Count Down Counter
-### Procedure
-/* write all the steps invloved */
 
 
-
-### PROGRAM 
-/*
-Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-
-
-
-
-
-
-### RTL LOGIC UP COUNTER AND DOWN COUNTER  
+# Procedure
+1. Create a new project in Quartus II software.
+2. Name the project as uc for upcounter and dc for downcounter.
+3. Create a new Verilog HDL file in the project file.
+4. Name the module as dc and uc for downcounter and upcounter.
+5. Within the module declare input and output variables.
+6. Complete the program.
+7. End the module.
 
 
 
 
+# PROGRAM 
+### UP COUNTER
+module uc(clk, A);
+
+input clk;
+
+output reg [2:0]A;
+
+always @(posedge clk)
+
+begin
+
+ 
+ A[2]=(((A[0])&(A[1]))^A[2]);
+	
+ A[1]=(A[0])^A[1];
+	
+ A[0]=A[0]^1;
+
+end
+
+endmodule
+### DOWN COUNTER
+module dc(clk,A);
+
+input clk;
+
+output reg [2:0]A;
+
+always @(posedge clk)
+
+begin
+	
+ A[2]=(((~A[0])&(~A[1]))^A[2]);
+	
+ A[1]=(~A[0])^A[1];
+	
+ A[0]=1^A[0];
+
+end
+
+
+# RTL realisation
+### UP COUNTER
+![Exp 6 UC RTL](https://github.com/amal-2006/Exp-7-Synchornous-counters-/assets/148410730/daae41e1-7e3f-4f37-abdf-0f9d6f1e21ea)
+
+
+### DOWN COUNTER
+![Exp 6 DC RTL](https://github.com/amal-2006/Exp-7-Synchornous-counters-/assets/148410730/a6a771ed-4039-49f3-a335-4b0e7dc5409d)
+
+
+# Truth Table
+### UP COUNTER
+
+### DOWN COUNTER
 
 
 
 
 
-### TIMING DIGRAMS FOR COUNTER  
+
+# Timing Diagram 
+### UP COUNTER
+![Exp 6 UC Timing Diagram](https://github.com/amal-2006/Exp-7-Synchornous-counters-/assets/148410730/3251ccc3-90a1-4c63-8e50-457e2efc574e)
+
+### DOWN COUNTER
+![Exp 6 DC Timing Diagram](https://github.com/amal-2006/Exp-7-Synchornous-counters-/assets/148410730/bb49bf33-b767-49b7-8606-38380e0486a0)
 
 
-
-
-
-### TRUTH TABLE 
-
-
-
-
-
-
-### RESULTS 
+### RESULTS
+Thus, the flipflops are implemented using verilog.
