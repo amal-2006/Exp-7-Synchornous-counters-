@@ -35,7 +35,8 @@ The Q outputs of each flip-flop will serve as the respective binary bits of the 
  
 
 Three-bit “Up” Counter
-![Sync  3 bit upcounters](https://github.com/amal-2006/Exp-7-Synchornous-counters-/assets/148410730/202d0298-dd85-4290-9cf5-39a6bd0c4cbc)
+![Sync  3 bit upcounters](https://github.com/amal-2006/Exp-7-Synchornous-counters-/assets/148410730/9c466098-f46e-428d-b8d1-89a995aec230)
+
 
 
 
